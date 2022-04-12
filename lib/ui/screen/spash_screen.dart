@@ -1,6 +1,6 @@
+import 'package:badmintop/ui/screen/front_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:badmintop/ui/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Timer(duration, () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) {
-          return HomeScreen();
+          return FrontScreen();
         }),
       );
     });

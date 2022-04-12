@@ -1,5 +1,26 @@
 [
-    {
+  {
+    "name": "Barokah Badminton Cikarang",
+    "rating": 4.6,
+    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "open": [
+      "Rabu,09.00–23.00",
+      "Kamis,09.00–23.00",
+      "Jumat,09.00–23.00",
+      "Sabtu,09.00–23.00",
+      "Minggu,09.00–23.00",
+      "Senin,09.00–23.00",
+      "Senin,09.00–23.00"
+    ],
+    "call": "02189677210",
+    "images": [
+      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+    ],
+    "is_save": true
+  },
+  {
       "name": "Barokah Badminton Cikarang",
       "rating": 4.6,
       "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
@@ -19,119 +40,98 @@
         "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
       ],
       "is_save": true
-    },
-    {
-        "name": "Barokah Badminton Cikarang",
-        "rating": 4.6,
-        "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
-        "open": [
-          "Rabu,09.00–23.00",
-          "Kamis,09.00–23.00",
-          "Jumat,09.00–23.00",
-          "Sabtu,09.00–23.00",
-          "Minggu,09.00–23.00",
-          "Senin,09.00–23.00",
-          "Senin,09.00–23.00"
-        ],
-        "call": "02189677210",
-        "images": [
-          "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-          "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-          "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
-        ],
-        "is_save": true
-    },
-    {
-      "name": "Barokah Badminton Cikarang",
-      "rating": 4.6,
-      "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
-      "open": [
-        "Rabu,09.00–23.00",
-        "Kamis,09.00–23.00",
-        "Jumat,09.00–23.00",
-        "Sabtu,09.00–23.00",
-        "Minggu,09.00–23.00",
-        "Senin,09.00–23.00",
-        "Senin,09.00–23.00"
-      ],
-      "call": "02189677210",
-      "images": [
-        "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-        "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-        "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
-      ],
-      "is_save": true
-    },
-    {
-      "name": "Barokah Badminton Cikarang",
-      "rating": 4.6,
-      "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
-      "open": [
-        "Rabu,09.00–23.00",
-        "Kamis,09.00–23.00",
-        "Jumat,09.00–23.00",
-        "Sabtu,09.00–23.00",
-        "Minggu,09.00–23.00",
-        "Senin,09.00–23.00",
-        "Senin,09.00–23.00"
-      ],
-      "call": "02189677210",
-      "images": [
-        "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-        "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-        "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
-      ],
-      "is_save": false
-    },
-    {
-      "name": "Barokah Badminton Cikarang",
-      "rating": 4.6,
-      "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
-      "open": [
-        "Rabu,09.00–23.00",
-        "Kamis,09.00–23.00",
-        "Jumat,09.00–23.00",
-        "Sabtu,09.00–23.00",
-        "Minggu,09.00–23.00",
-        "Senin,09.00–23.00",
-        "Senin,09.00–23.00"
-      ],
-      "call": "02189677210",
-      "images": [
-        "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-        "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-        "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
-      ],
-      "is_save": false
-    },
-    {
-      "name": "Barokah Badminton Cikarang",
-      "rating": 4.6,
-      "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
-      "open": [
-        "Rabu,09.00–23.00",
-        "Kamis,09.00–23.00",
-        "Jumat,09.00–23.00",
-        "Sabtu,09.00–23.00",
-        "Minggu,09.00–23.00",
-        "Senin,09.00–23.00",
-        "Senin,09.00–23.00"
-      ],
-      "call": "02189677210",
-      "images": [
-        "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-        "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-        "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
-      ],
-      "is_save": false
-    },
-    {
-      "name": "Barokah Badminton Cikarang",
-      "rating": 4.6,
-      "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
-      "open": ["Rabu,09.00–23.00", "Kamis,09.00–23.00", "Jumat,09.00–23.00", "Sabtu,09.00–23.00", "Minggu,09.00–23.00", "Senin,09.00–23.00", "Senin,09.00–23.00"],
-      "call": "02189677210",
-      "images": ["https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no", "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no", "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"],
-      "is_save": false
-    }
-  ]
+  },
+  {
+    "name": "Barokah Badminton Cikarang",
+    "rating": 4.6,
+    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "open": [
+      "Rabu,09.00–23.00",
+      "Kamis,09.00–23.00",
+      "Jumat,09.00–23.00",
+      "Sabtu,09.00–23.00",
+      "Minggu,09.00–23.00",
+      "Senin,09.00–23.00",
+      "Senin,09.00–23.00"
+    ],
+    "call": "02189677210",
+    "images": [
+      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+    ],
+    "is_save": true
+  },
+  {
+    "name": "Barokah Badminton Cikarang",
+    "rating": 4.6,
+    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "open": [
+      "Rabu,09.00–23.00",
+      "Kamis,09.00–23.00",
+      "Jumat,09.00–23.00",
+      "Sabtu,09.00–23.00",
+      "Minggu,09.00–23.00",
+      "Senin,09.00–23.00",
+      "Senin,09.00–23.00"
+    ],
+    "call": "02189677210",
+    "images": [
+      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+    ],
+    "is_save": false
+  },
+  {
+    "name": "Barokah Badminton Cikarang",
+    "rating": 4.6,
+    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "open": [
+      "Rabu,09.00–23.00",
+      "Kamis,09.00–23.00",
+      "Jumat,09.00–23.00",
+      "Sabtu,09.00–23.00",
+      "Minggu,09.00–23.00",
+      "Senin,09.00–23.00",
+      "Senin,09.00–23.00"
+    ],
+    "call": "02189677210",
+    "images": [
+      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+    ],
+    "is_save": false
+  },
+  {
+    "name": "Barokah Badminton Cikarang",
+    "rating": 4.6,
+    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "open": [
+      "Rabu,09.00–23.00",
+      "Kamis,09.00–23.00",
+      "Jumat,09.00–23.00",
+      "Sabtu,09.00–23.00",
+      "Minggu,09.00–23.00",
+      "Senin,09.00–23.00",
+      "Senin,09.00–23.00"
+    ],
+    "call": "02189677210",
+    "images": [
+      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+    ],
+    "is_save": false
+  },
+  {
+    "name": "Barokah Badminton Cikarang",
+    "rating": 4.6,
+    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "open": ["Rabu,09.00–23.00", "Kamis,09.00–23.00", "Jumat,09.00–23.00", "Sabtu,09.00–23.00", "Minggu,09.00–23.00", "Senin,09.00–23.00", "Senin,09.00–23.00"],
+    "call": "02189677210",
+    "images": ["https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no", "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no", "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"],
+    "is_save": false
+  }
+]

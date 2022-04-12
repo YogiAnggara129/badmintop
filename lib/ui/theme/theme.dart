@@ -7,25 +7,25 @@ Color blueColorSecond = const Color(0xFF3CD3AD);
 TextStyle h1HeaderStyle = GoogleFonts.roboto(
   color: Colors.white,
   fontWeight: FontWeight.bold,
-  fontSize: 36,
+  fontSize: 32,
 );
 
 TextStyle h2HeaderStyle = GoogleFonts.roboto(
   color: Colors.white,
-  fontWeight: FontWeight.bold,
+  fontWeight: FontWeight.normal,
   fontSize: 24,
 );
 
 TextStyle h1ItemStyle = GoogleFonts.roboto(
   color: Colors.black,
   fontWeight: FontWeight.bold,
-  fontSize: 14,
+  fontSize: 16,
 );
 
 TextStyle itemContentStyle = GoogleFonts.roboto(
   color: Colors.black,
   fontWeight: FontWeight.normal,
-  fontSize: 10,
+  fontSize: 16,
 );
 
 BoxDecoration lineItemStyle = BoxDecoration(
