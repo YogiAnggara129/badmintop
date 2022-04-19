@@ -1,4 +1,4 @@
-class GorModel {
+class Gor {
   String? name;
   double? rating;
   String? address;
@@ -7,7 +7,7 @@ class GorModel {
   List<String>? images;
   bool? isSave;
 
-  GorModel(
+  Gor(
       {this.name,
       this.rating,
       this.address,
@@ -16,7 +16,7 @@ class GorModel {
       this.images,
       this.isSave});
 
-  GorModel.fromJson(Map<String, dynamic> json) {
+  Gor.fromJson(Map<String, dynamic> json) {
     name = json['name'];
     rating = json['rating'];
     address = json['address'];

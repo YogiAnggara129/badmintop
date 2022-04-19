@@ -26,8 +26,9 @@ class _FrontScreenState extends State<FrontScreen> {
 
   @override
   Widget build(BuildContext context) {
+    
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-       statusBarColor: blueColorFirst,
+      statusBarColor: blueColorFirst,
     ));
     
     return SafeArea(
@@ -36,7 +37,7 @@ class _FrontScreenState extends State<FrontScreen> {
           child: _widgetOptions.elementAt(_selectedIndex),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: blueColorFirst,
+          selectedItemColor: blueColorThird,
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,
           items: const <BottomNavigationBarItem>[
