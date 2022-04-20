@@ -1,7 +1,9 @@
 import 'package:badmintop/model/news.dart';
+import 'package:badmintop/view_model/news_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:badmintop/ui/theme/theme.dart';
 import 'package:badmintop/model/news_repository.dart';
+import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:badmintop/ui/widget/booking_widget.dart';
 import 'package:badmintop/ui/widget/news_widget.dart';
@@ -11,13 +13,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    NewsViewModel newsViewModel = context.watch<NewsViewModel>();
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         const HeaderWidget(),
         const BookingWidget(),
-        NewsWidget(),
+        NewsWidget(newsList: newsViewModel.newsList),
       ],
     );
   }

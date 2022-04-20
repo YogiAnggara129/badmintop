@@ -7,32 +7,14 @@ import 'package:badmintop/ui/screen/detail_screen.dart';
 import 'package:provider/provider.dart';
 
 class GorWidget extends StatelessWidget {
-  GorWidget({Key? key, required this.gorList}) : super(key: key);
-
-  final GorRepository gorRepository = GorRepository();
+  const GorWidget({Key? key, required this.gorList}) : super(key: key);
+  
   final List<Gor> gorList;
-
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20),
-      // child: FutureBuilder<List<Gor>>(
-      //   future: gorRepository.fetchNewsList(),
-      //   builder: (context, snapshot) {
-      //     if (snapshot.hasError) {
-      //       return const Center(
-      //         child: Text('An error has occurred!'),
-      //       );
-      //     } else if (snapshot.hasData) {
-      //       return GorListWidget(gor: snapshot.data!);
-      //     } else {
-      //       return const Center(
-      //         child: CircularProgressIndicator(),
-      //       );
-      //     }
-      //   },
-      // )
       child: GorListWidget(gor: gorList),
     );
   }

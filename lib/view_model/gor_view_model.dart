@@ -9,10 +9,6 @@ class GorViewModel extends ChangeNotifier {
   setGorList(List<Gor> gorsList) => _gorList = gorsList;
   List<Gor> get gorList => _gorList;
 
-  GorViewModel() {
-    getGors();
-  }
-
   void getGors() async {
     final data = await GorRepository().fetchGorList();
     setGorList(data);

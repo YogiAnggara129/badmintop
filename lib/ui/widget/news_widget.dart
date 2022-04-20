@@ -1,3 +1,4 @@
+import 'package:badmintop/view_model/news_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:badmintop/ui/theme/theme.dart';
 import 'package:badmintop/model/news_repository.dart';
@@ -5,9 +6,9 @@ import 'package:badmintop/model/news.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NewsWidget extends StatelessWidget {
-  NewsWidget({Key? key}) : super(key: key);
+  const NewsWidget({Key? key, required this.newsList}) : super(key: key);
 
-  final NewsRepository newsRepository = NewsRepository();
+  final List<News> newsList;
 
   @override
   Widget build(BuildContext context) {
@@ -23,30 +24,15 @@ class NewsWidget extends StatelessWidget {
               style: h1ItemStyle,
             ),
           ),
-          FutureBuilder<List<News>>(
-            future: newsRepository.fetchNewsList(),
-            builder: (context, snapshot) {
-              if (snapshot.hasError) {
-                return const Center(
-                  child: Text('An error has occurred!'),
-                );
-              } else if (snapshot.hasData) {
-                return NewsList(news: snapshot.data!);
-              } else {
-                return const Center(
-                  child: CircularProgressIndicator(),
-                );
-              }
-            },
-          )
+          NewsListWidget(news: newsList),
         ],
       )
     );
   }
 }
 
-class NewsList extends StatelessWidget {
-  const NewsList({Key? key, required this.news}) : super(key: key);
+class NewsListWidget extends StatelessWidget {
+  const NewsListWidget({Key? key, required this.news}) : super(key: key);
 
   final List<News> news;
 

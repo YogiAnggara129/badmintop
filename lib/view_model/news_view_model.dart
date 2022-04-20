@@ -3,27 +3,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:badmintop/model/news.dart';
 
 class NewsViewModel with ChangeNotifier {
-  News? _news;
+  List<News> _newsList = [];
+  setNewsList(List<News> newsList) => _newsList = newsList;
+  List<News> get newsList => _newsList;
 
-  News? get news {
-    return _news;
-  }
-
-  Future<void> FetchNewsData() async {
-    try {
-      List<News> newsList = await NewsRepository().fetchNewsList();
-    } catch(e) {
-      print(e);
-    }
+  void getNews() async {
+    final data = await NewsRepository().fetchNewsList();
+    setNewsList(data);
     notifyListeners();
   }
 
-  // List<News> getNewsList() {
-
-  // }
-
-  void setSelectedNews(News? news) {
-    _news = news;
-    notifyListeners();
-  }
 }
