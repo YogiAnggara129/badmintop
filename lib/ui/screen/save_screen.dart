@@ -17,7 +17,7 @@ class SaveScreen extends StatelessWidget {
       children: <Widget>[
         const HeaderWidget(),
         const SearchBarWidget(),
-        gorViewModel.gorSavedId != [] ? GorWidget(gorList: gorViewModel.gorSavedList) : Center(
+        gorViewModel.gorSavedIdList != [] ? GorWidget(gorList: gorViewModel.gorSavedList) : Center(
           heightFactor: 25,
           child: Text(
             "Belum ada gor yang kamu simpan",

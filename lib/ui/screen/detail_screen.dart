@@ -215,7 +215,6 @@ class _SaveButtonWidgetState extends State<SaveButtonWidget> {
   @override
   Widget build(BuildContext context) {
     GorViewModel gorViewModel = context.watch<GorViewModel>();
-    
     return InkWell(
       onTap: (() => setState(() => gorViewModel.pressedSaveGor())),
       child: Container(

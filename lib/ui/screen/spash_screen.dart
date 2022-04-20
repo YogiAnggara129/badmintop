@@ -1,5 +1,6 @@
 import 'package:badmintop/ui/screen/front_screen.dart';
 import 'package:badmintop/view_model/gor_view_model.dart';
+import 'package:badmintop/view_model/news_view_model.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -19,7 +20,9 @@ class _SplashScreenState extends State<SplashScreen> {
   
   @override
   Widget build(BuildContext context) {
+    NewsViewModel newsViewModel = context.watch<NewsViewModel>();
     GorViewModel gorViewModel = context.watch<GorViewModel>();
+    newsViewModel.getNews();
     gorViewModel.getGors();
     return Scaffold(
       body: Center(

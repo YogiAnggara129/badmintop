@@ -45,7 +45,16 @@ class HeaderWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset('assets/images/logo.png', height: 20.0,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Image.asset('assets/images/logo.png', height: 20.0,),
+              Icon(
+                Icons.description_outlined,
+                color: Colors.white,
+              ),
+            ],
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20.0),
             child:Column(

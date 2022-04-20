@@ -36,7 +36,7 @@ class GorListWidget extends StatelessWidget {
       itemBuilder: (BuildContext context, int index) {
         return InkWell(
           onTap: () {
-            gorViewModel.setGorIdSelected(gorViewModel.gorList[index].id);
+            gorViewModel.setGorIdSelected(gor[index].id);
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => DetailScreen()),
