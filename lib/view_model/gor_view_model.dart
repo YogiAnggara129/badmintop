@@ -2,25 +2,44 @@ import 'package:badmintop/model/gor_repository.dart';
 import 'package:badmintop/model/gor.dart';
 import 'package:flutter/cupertino.dart';
 
-class GorViewModel with ChangeNotifier {
+class GorViewModel extends ChangeNotifier {
   List<Gor> _gorList = [];
-  bool _loading = false;
+  int _gorIdSelected = -1;
+  List<int> _gorSavedId = [];
   setGorList(List<Gor> gorsList) => _gorList = gorsList;
   List<Gor> get gorList => _gorList;
 
   GorViewModel() {
     getGors();
-  }  
-
-  setLoading(bool loading) async {
-    _loading = loading;
-    notifyListeners();
-  }  
+  }
 
   void getGors() async {
-    setLoading(true);
-    final data = await GorRepository().fetchNewsList();
+    final data = await GorRepository().fetchGorList();
     setGorList(data);
-    setLoading(false);
+    _gorList.forEach((element) {
+        if(element.isSave!) {
+          _gorSavedId.insert(0, element.id!);
+        }
+    });
+    notifyListeners();
+  }
+
+  void setGorIdSelected(id) {
+    _gorIdSelected = id;
+    notifyListeners();
+  }
+
+  List<int> get gorSavedId => _gorSavedId;
+
+  Gor get gorSelected => _gorList.where((element) => element.id == _gorIdSelected).toList()[0];
+
+  void pressedSaveGor(){
+    _gorList[_gorIdSelected].isSave = !_gorList[_gorIdSelected].isSave!;
+    _gorList[_gorIdSelected].isSave! ? _gorSavedId.insert(0, _gorIdSelected) : _gorSavedId.remove(_gorIdSelected);
+    notifyListeners();
+  }
+
+  List<Gor> get gorSavedList {
+    return _gorSavedId.map((e) => _gorList.where((element) => element.id == e).toList()[0]).toList();
   }
 }

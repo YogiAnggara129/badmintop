@@ -1,15 +1,17 @@
 import 'package:badmintop/ui/theme/theme.dart';
+import 'package:badmintop/view_model/gor_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:badmintop/model/gor.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({ Key? key, required this.gor }) : super(key: key);
-
-  final Gor gor;
+  const DetailScreen({ Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    GorViewModel gorViewModel = context.watch<GorViewModel>();
+    final Gor gor = gorViewModel.gorSelected;
 
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: blueColorFirst,
@@ -209,19 +211,21 @@ class SaveButtonWidget extends StatefulWidget {
 }
 
 class _SaveButtonWidgetState extends State<SaveButtonWidget> {
-  var isSaved = false;
+  
   @override
   Widget build(BuildContext context) {
+    GorViewModel gorViewModel = context.watch<GorViewModel>();
+    
     return InkWell(
-      onTap: (() => setState(() => isSaved = !isSaved)),
+      onTap: (() => setState(() => gorViewModel.pressedSaveGor())),
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 5.0),
         decoration: BoxDecoration(
-          border: isSaved ? null : Border.all(
+          border: gorViewModel.gorSelected.isSave! ? null : Border.all(
             color: blueColorThird,
             width: 1.5
           ),
-          color: isSaved ? blueColorFirst : null,
+          color: gorViewModel.gorSelected.isSave! ? blueColorFirst : null,
           borderRadius: BorderRadius.all(
             Radius.circular(20)
           ),
@@ -230,11 +234,11 @@ class _SaveButtonWidgetState extends State<SaveButtonWidget> {
           children: [
             Icon(
               Icons.bookmark_add_outlined,
-              color: isSaved ? Colors.white : blueColorFirst,
+              color: gorViewModel.gorSelected.isSave! ? Colors.white : blueColorFirst,
             ),
             Text(
-              isSaved ? "Disimpan" : "Simpan",
-              style: isSaved ? h3HeaderStyle : itemContentStyle,
+              gorViewModel.gorSelected.isSave! ? "Disimpan" : "Simpan",
+              style: gorViewModel.gorSelected.isSave! ? h3HeaderStyle : itemContentStyle,
             )
           ],
         ),

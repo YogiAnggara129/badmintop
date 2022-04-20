@@ -1,34 +1,39 @@
+import 'package:badmintop/view_model/gor_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:badmintop/ui/theme/theme.dart';
 import 'package:badmintop/model/gor_repository.dart';
 import 'package:badmintop/model/gor.dart';
 import 'package:badmintop/ui/screen/detail_screen.dart';
+import 'package:provider/provider.dart';
 
 class GorWidget extends StatelessWidget {
-  GorWidget({Key? key}) : super(key: key);
+  GorWidget({Key? key, required this.gorList}) : super(key: key);
 
   final GorRepository gorRepository = GorRepository();
+  final List<Gor> gorList;
+
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20),
-      child: FutureBuilder<List<Gor>>(
-        future: gorRepository.fetchNewsList(),
-        builder: (context, snapshot) {
-          if (snapshot.hasError) {
-            return const Center(
-              child: Text('An error has occurred!'),
-            );
-          } else if (snapshot.hasData) {
-            return GorListWidget(gor: snapshot.data!);
-          } else {
-            return const Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-        },
-      )
+      // child: FutureBuilder<List<Gor>>(
+      //   future: gorRepository.fetchNewsList(),
+      //   builder: (context, snapshot) {
+      //     if (snapshot.hasError) {
+      //       return const Center(
+      //         child: Text('An error has occurred!'),
+      //       );
+      //     } else if (snapshot.hasData) {
+      //       return GorListWidget(gor: snapshot.data!);
+      //     } else {
+      //       return const Center(
+      //         child: CircularProgressIndicator(),
+      //       );
+      //     }
+      //   },
+      // )
+      child: GorListWidget(gor: gorList),
     );
   }
 }
@@ -40,6 +45,7 @@ class GorListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    GorViewModel gorViewModel = context.watch<GorViewModel>();
     return ListView.builder(
       scrollDirection: Axis.vertical,
       shrinkWrap: true,
@@ -48,9 +54,10 @@ class GorListWidget extends StatelessWidget {
       itemBuilder: (BuildContext context, int index) {
         return InkWell(
           onTap: () {
+            gorViewModel.setGorIdSelected(gorViewModel.gorList[index].id);
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetailScreen(gor: gor[index])),
+              MaterialPageRoute(builder: (context) => DetailScreen()),
             );
           },
           child: Card(

@@ -5,14 +5,14 @@ import 'dart:io';
 import 'package:badmintop/model/gor.dart';
 
 class GorRepository {
-  List<Gor> parseNews(String responseBody) {
+  List<Gor> parseGor(String responseBody) {
     final parsed = jsonDecode(responseBody).cast<Map<String, dynamic>>();
     return parsed.map<Gor>((json) => Gor.fromJson(json)).toList();
   }
 
-  Future<List<Gor>> fetchNewsList() async {
+  Future<List<Gor>> fetchGorList() async {
       final String response = await rootBundle.loadString('assets/json/gor.json');
-      return compute(parseNews, response);
+      return compute(parseGor, response);
   }
 
   saveNewsList(Gor gor) {

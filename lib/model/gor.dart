@@ -1,4 +1,5 @@
 class Gor {
+  int? id;
   String? name;
   double? rating;
   String? address;
@@ -8,7 +9,8 @@ class Gor {
   bool? isSave;
 
   Gor(
-      {this.name,
+      {this.id,
+      this.name,
       this.rating,
       this.address,
       this.open,
@@ -17,6 +19,7 @@ class Gor {
       this.isSave});
 
   Gor.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
     name = json['name'];
     rating = json['rating'];
     address = json['address'];
@@ -28,6 +31,7 @@ class Gor {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['id'] = this.id;
     data['name'] = this.name;
     data['rating'] = this.rating;
     data['address'] = this.address;

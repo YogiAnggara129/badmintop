@@ -1,6 +1,9 @@
 import 'package:badmintop/ui/screen/front_screen.dart';
+import 'package:badmintop/view_model/gor_view_model.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
+
+import 'package:provider/provider.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -16,6 +19,8 @@ class _SplashScreenState extends State<SplashScreen> {
   
   @override
   Widget build(BuildContext context) {
+    GorViewModel gorViewModel = context.watch<GorViewModel>();
+    gorViewModel.getGors();
     return Scaffold(
       body: Center(
         child: Image.asset(
