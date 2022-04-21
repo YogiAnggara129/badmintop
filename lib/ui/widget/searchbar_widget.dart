@@ -10,9 +10,9 @@ class SearchBarWidget extends StatefulWidget {
 class _SearchBarWidgetState extends State<SearchBarWidget> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      child: const TextField(
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      child: TextField(
         decoration: InputDecoration(
           border: OutlineInputBorder(),
           hintText: 'Cari gor di sini ....',

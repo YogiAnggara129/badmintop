@@ -19,11 +19,12 @@
       "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
       "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
     ],
-    "is_save": true
+    "is_save": false,
+    "hourly_price": 10000.0
   },
   {
     "id": 1,
-    "name": "Barokah Badminton Cikarang 2",
+    "name": "Lapangan bulutangkis PB.gg kramat",
     "rating": 4.6,
     "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
     "open": [
@@ -35,19 +36,20 @@
       "Senin,09.00–23.00",
       "Senin,09.00–23.00"
     ],
-    "call": "02189677210",
+    "call": "083877884193",
     "images": [
-      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+      "https://lh5.googleusercontent.com/p/AF1QipOHkGN_0n4U2s7nWE6BE6pcVblaXoWBxdNLl1Hb=w408-h306-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipP-ojzLznv-vzsueN3WwaptVJ8L7iqgLh_hs0Es=s483-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipPerFPDmjsvDna9LNDilIHh5w--pZEGCSEB6nIP=s635-k-no"
     ],
-    "is_save": true
+    "is_save": false,
+    "hourly_price": 11000.0
   },
   {
     "id": 2,
-    "name": "Barokah Badminton Cikarang 3",
+    "name": "Lapangan Bulutangkis Blok A KSB",
     "rating": 4.6,
-    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "address": "perumahan KSB blok A Rt. 01 rw. 022 sukaragam baru, Kec. Serang, Kota Serang, Banten",
     "open": [
       "Rabu,09.00–23.00",
       "Kamis,09.00–23.00",
@@ -63,7 +65,8 @@
       "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
       "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
     ],
-    "is_save": true
+    "is_save": false,
+    "hourly_price": 5000.0
   },
   {
     "id": 3,
@@ -81,17 +84,18 @@
     ],
     "call": "02189677210",
     "images": [
-      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+      "https://lh5.googleusercontent.com/p/AF1QipNq3Y_0zaQ_67W4cov9vmMLRynp9PQxVXyBGZAj=w203-h152-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipOBfWcj-4edyzS3PEXfXQUaQa2XXxrM9Mi5sygV=s777-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipM2slf49qQNwMoFbylrU9GXUzEiFGrlO74lMWLe=s1000-k-no"
     ],
-    "is_save": false
+    "is_save": false,
+    "hourly_price": 10000.0
   },
   {
     "id": 4,
-    "name": "Barokah Badminton Cikarang 5",
-    "rating": 4.6,
-    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "name": "Gor Futsal dan Badminton Dua Saudara",
+    "rating": 3.9,
+    "address": "Jl. Kp. Cicadas No.62, Sukaresmi, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
     "open": [
       "Rabu,09.00–23.00",
       "Kamis,09.00–23.00",
@@ -101,19 +105,20 @@
       "Senin,09.00–23.00",
       "Senin,09.00–23.00"
     ],
-    "call": "02189677210",
+    "call": "081381033189",
     "images": [
-      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+      "https://www.gstatic.com/images/icons/material/system_gm/2x/arrow_back_gm_grey_24dp.png",
+      "https://lh5.googleusercontent.com/p/AF1QipMtZk6rio4wOnYf9MpscbbWrgPti1VtPn0AwISf=s901-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipObsNGlQ-MNvEwJiZRUrcus1azEEoyYyCVqewHS=s773-k-no"
     ],
-    "is_save": false
+    "is_save": false,
+    "hourly_price": 15000.0
   },
   {
     "id": 5,
-    "name": "Barokah Badminton Cikarang 6",
-    "rating": 4.6,
-    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "name": "GOR BADMINTON AL-LUTHFAH",
+    "rating": 4.5,
+    "address": "M458+W39, Ciantra, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
     "open": [
       "Rabu,09.00–23.00",
       "Kamis,09.00–23.00",
@@ -125,20 +130,25 @@
     ],
     "call": "02189677210",
     "images": [
-      "https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no",
-      "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no",
-      "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"
+      "https://lh5.googleusercontent.com/p/AF1QipMmIviV6Ys9lcJ_CtZiWXqufK190PBYUDar7r4r=s1225-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipNa-UKEPL9E5-1H9nGI2ktWsxWJuEHjfM1QrHZm=s1354-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipNGSeokHsEQD1ivDmMnIhk1pY97t99O8jnk5cu3=s1016-k-no"
     ],
-    "is_save": false
+    "is_save": false,
+    "hourly_price": 10000.0
   },
   {
     "id": 6,
-    "name": "Barokah Badminton Cikarang 7",
-    "rating": 4.6,
-    "address": "Jl.Raya Kp Pasir Randu Rt 12/6 No 5 Desa Sukasari Kec Serang Baru 17331, Serang, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530",
+    "name": "GOR WRB Badminton Hall",
+    "rating": 5.0,
+    "address": "Jl. Raya Cikarang - Cibarusah No.4, Sindangmulya, Kec. Cibarusah, Kabupaten Bekasi, Jawa Barat 17340",
     "open": ["Rabu,09.00–23.00", "Kamis,09.00–23.00", "Jumat,09.00–23.00", "Sabtu,09.00–23.00", "Minggu,09.00–23.00", "Senin,09.00–23.00", "Senin,09.00–23.00"],
     "call": "02189677210",
-    "images": ["https://lh5.googleusercontent.com/p/AF1QipORaZl-tO9M9czC4Nerbcxl_h0coe4KbtW0vonl=w203-h152-k-no", "https://lh5.googleusercontent.com/p/AF1QipMU5EDR3g6r4gbBsw4jSUMx7xAsthDZIQyHWnZ4=s534-k-no", "https://lh5.googleusercontent.com/p/AF1QipPSRPqRABxNtZPM__yz3yM5e3imLQm0U1ayKhTX=s534-k-no"],
-    "is_save": false
+    "images": [
+      "https://lh5.googleusercontent.com/p/AF1QipP7-DNDEs9q2FuvVquB8shv87Qs8S_fu0IaipLJ=s1031-k-no", 
+      "https://lh5.googleusercontent.com/p/AF1QipP7-DNDEs9q2FuvVquB8shv87Qs8S_fu0IaipLJ=s1031-k-no"
+    ],
+    "is_save": false,
+    "hourly_price": 10000.0
   }
 ]

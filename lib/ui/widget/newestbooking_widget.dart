@@ -1,8 +1,13 @@
+import 'package:badmintop/model/booked.dart';
+import 'package:badmintop/model/gor.dart';
 import 'package:flutter/material.dart';
 import 'package:badmintop/ui/theme/theme.dart';
 
-class BookingWidget extends StatelessWidget {
-  const BookingWidget({Key? key}) : super(key: key);
+class NewestBookingWidget extends StatelessWidget {
+  const NewestBookingWidget({Key? key, required this.gorBooked, required this.booked}) : super(key: key);
+
+  final Gor gorBooked;
+  final Booked booked;
 
   @override
   Widget build(BuildContext context) {
@@ -28,17 +33,17 @@ class BookingWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Barokah Bandminton Cikarang',
+                    gorBooked.name!,
                     style: h2ItemStyle,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Text(
-                    'Sukasari, Kec. Serang Baru, Kabupaten Bekasi, Jawa Barat 17330',
+                    gorBooked.address!,
                     style: itemContentStyle,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Row(
@@ -50,11 +55,11 @@ class BookingWidget extends StatelessWidget {
                               Icons.calendar_today,
                               color: blueColorThird,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
-                              '4 April 2022',
+                              booked.date!,
                               style: itemContentStyle,
                             ),
                           ],
@@ -67,11 +72,11 @@ class BookingWidget extends StatelessWidget {
                               Icons.access_time,
                               color: blueColorThird,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
-                              '9.00 - 12.00',
+                              booked.time!,
                               style: itemContentStyle,
                             ),
                           ],

@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class FrontScreen extends StatefulWidget {
+  const FrontScreen({Key? key}) : super(key: key);
+
   @override
   State<FrontScreen> createState() => _FrontScreenState();
 }

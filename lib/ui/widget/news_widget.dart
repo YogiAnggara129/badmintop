@@ -1,7 +1,5 @@
-import 'package:badmintop/view_model/news_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:badmintop/ui/theme/theme.dart';
-import 'package:badmintop/model/news_repository.dart';
 import 'package:badmintop/model/news.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -66,7 +64,7 @@ class NewsListWidget extends StatelessWidget {
                     width: 70.0,
                     height: 60.0,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10.0,
                   ),
                   Expanded(
@@ -79,7 +77,7 @@ class NewsListWidget extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: h2ItemStyle,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Text(

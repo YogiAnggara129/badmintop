@@ -4,7 +4,7 @@ import 'package:badmintop/view_model/news_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<GorViewModel>(create: (_) => GorViewModel()),
-        ChangeNotifierProvider<NewsViewModel>(create: (_) => NewsViewModel())
+        ChangeNotifierProvider<NewsViewModel>(create: (_) => NewsViewModel()),
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'BadminTop',
         home: SplashScreen(),

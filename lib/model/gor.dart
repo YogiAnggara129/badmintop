@@ -7,6 +7,7 @@ class Gor {
   String? call;
   List<String>? images;
   bool? isSave;
+  double? hourlyPrice;
 
   Gor(
       {this.id,
@@ -16,7 +17,8 @@ class Gor {
       this.open,
       this.call,
       this.images,
-      this.isSave});
+      this.isSave,
+      this.hourlyPrice});
 
   Gor.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -27,6 +29,7 @@ class Gor {
     call = json['call'];
     images = json['images'].cast<String>();
     isSave = json['is_save'];
+    hourlyPrice = json['hourly_price'];
   }
 
   Map<String, dynamic> toJson() {
@@ -39,6 +42,7 @@ class Gor {
     data['call'] = this.call;
     data['images'] = this.images;
     data['is_save'] = this.isSave;
+    data['hourly_price'];
     return data;
   }
 }

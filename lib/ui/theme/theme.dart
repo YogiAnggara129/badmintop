@@ -40,11 +40,3 @@ TextStyle itemContentStyle = TextStyle(
   fontWeight: FontWeight.normal,
   fontSize: 15,
 );
-
-BoxDecoration lineItemStyle = const BoxDecoration(
-  border: Border(
-    bottom: BorderSide(
-      width: 1.0
-    )
-  )
-);
