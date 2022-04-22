@@ -6,6 +6,7 @@ import 'dart:async';
 
 import 'package:provider/provider.dart';
 
+// sumber: https://www.codingtive.com/2019/05/tutorial-membuat-splash-screen-flutter-bahasa-indonesia.html
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 

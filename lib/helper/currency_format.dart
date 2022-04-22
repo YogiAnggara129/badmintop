@@ -1,6 +1,6 @@
 import 'package:intl/intl.dart';
 
-// Diambil dari https://galangaji.medium.com/5-flutter-tutorial-cara-mudah-format-rupiah-pada-dart-c1711621e648
+// sumber: https://galangaji.medium.com/5-flutter-tutorial-cara-mudah-format-rupiah-pada-dart-c1711621e648
 class CurrencyFormat {
   static String convertToIdr(dynamic number, int decimalDigit) {
     NumberFormat currencyFormatter = NumberFormat.currency(
