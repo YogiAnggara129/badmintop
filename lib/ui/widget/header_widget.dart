@@ -2,6 +2,7 @@ import 'package:badmintop/model/gor.dart';
 import 'package:badmintop/model/user.dart';
 import 'package:badmintop/ui/widget/savebutton_widget.dart';
 import 'package:badmintop/ui/widget/showtoast_widget.dart';
+import 'package:badmintop/view_model/gor_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:badmintop/ui/theme/theme.dart';
 
@@ -167,12 +168,13 @@ class SaveHeaderWidget extends StatelessWidget {
 }
 
 class DetailHeaderWidget extends StatelessWidget {
-  const DetailHeaderWidget({ Key? key, required this.gor }) : super(key: key);
+  const DetailHeaderWidget({ Key? key, required this.gorViewModel }) : super(key: key);
 
-  final Gor gor;
+  final GorViewModel gorViewModel;
 
   @override
   Widget build(BuildContext context) {
+    final Gor gor = gorViewModel.gorSelected;
     return Column(
       children: [
         SizedBox(
@@ -208,7 +210,7 @@ class DetailHeaderWidget extends StatelessWidget {
                   const SizedBox(
                     width: 10.0,
                   ),
-                  const SaveButtonWidget(),
+                  SaveButtonWidget(gorViewModel: gorViewModel),
                 ],
               ),
             ],

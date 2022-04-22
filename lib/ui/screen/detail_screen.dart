@@ -7,14 +7,14 @@ import 'package:badmintop/view_model/gor_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:badmintop/model/gor.dart';
 import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({ Key? key}) : super(key: key);
+  const DetailScreen({ Key? key, required this.gorViewModel }) : super(key: key);
+
+  final GorViewModel gorViewModel;
 
   @override
   Widget build(BuildContext context) {
-    GorViewModel gorViewModel = context.watch<GorViewModel>();
     final Gor gor = gorViewModel.gorSelected;
 
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -31,7 +31,7 @@ class DetailScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  DetailHeaderWidget(gor: gor),
+                  DetailHeaderWidget(gorViewModel: gorViewModel),
                   GorDescriptionWidget(gor: gor),
                   const SizedBox(
                     height: 10.0,

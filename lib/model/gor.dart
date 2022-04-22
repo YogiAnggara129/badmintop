@@ -31,18 +31,4 @@ class Gor {
     isSave = json['is_save'];
     hourlyPrice = json['hourly_price'];
   }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
-    data['rating'] = this.rating;
-    data['address'] = this.address;
-    data['open'] = this.open;
-    data['call'] = this.call;
-    data['images'] = this.images;
-    data['is_save'] = this.isSave;
-    data['hourly_price'];
-    return data;
-  }
 }

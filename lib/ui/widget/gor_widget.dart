@@ -4,16 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:badmintop/ui/theme/theme.dart';
 import 'package:badmintop/model/gor.dart';
 import 'package:badmintop/ui/screen/detail_screen.dart';
-import 'package:provider/provider.dart';
 
 class GorListWidget extends StatelessWidget {
-  const GorListWidget({Key? key, required this.gor}) : super(key: key);
+  const GorListWidget({Key? key, required this.gorViewModel, this.isSaved = false}) : super(key: key);
 
-  final List<Gor> gor;
+  final GorViewModel gorViewModel;
+  final bool isSaved;
 
   @override
   Widget build(BuildContext context) {
-    GorViewModel gorViewModel = context.watch<GorViewModel>();
+    List<Gor> gor;
+    bool _isSaved = isSaved;
+    if(_isSaved) {
+      gor = gorViewModel.gorSavedList;
+    } else {
+      gor = gorViewModel.gorSearched != "" ? gorViewModel.getSearchGor() : gorViewModel.gorList;
+    }
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: ListView.builder(
@@ -27,7 +33,7 @@ class GorListWidget extends StatelessWidget {
               gorViewModel.setGorIdSelected(gor[index].id);
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const DetailScreen()),
+                MaterialPageRoute(builder: (context) => DetailScreen(gorViewModel: gorViewModel)),
               );
             },
             child: Card(

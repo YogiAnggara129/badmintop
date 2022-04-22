@@ -8,23 +8,39 @@ class GorViewModel extends ChangeNotifier {
   List<int> _gorSavedIdList = [];
   bool _isThereGorSaved = false;
   int _gorIdSelected = -1;
-  setGorList(List<Gor> gorsList) => _gorList = gorsList;
-  setGorSavedIdList(List<int> gorSavedIdList) => _gorSavedIdList = gorSavedIdList;
-  setIsThereGorSaved(bool isThereGorSaved) => _isThereGorSaved = isThereGorSaved;
+  String _gorSearched = '';
+  String get gorSearched => _gorSearched;
+
+  GorViewModel() {
+    getGors();
+  } 
+
+  void setGorList(List<Gor> gorsList) {
+    _gorList = gorsList;
+    // notifyListeners();
+  }
+  void setGorSavedIdList(List<int> gorSavedIdList) {
+    _gorSavedIdList = gorSavedIdList;
+  }
+  void setIsThereGorSaved(bool isThereGorSaved) {
+    _isThereGorSaved = isThereGorSaved;
+    notifyListeners();
+  }
+  setGorSearched(String gorSearched) {
+    _gorSearched = gorSearched;
+    notifyListeners();
+  }
   List<Gor> get gorList => _gorList;
   bool get isThereGorSaved => _isThereGorSaved;
 
-  void getGors() async {
+  Future<void> getGors() async {
     final gors = await GorRepository().fetchGorList();
     setGorList(gors);
-    notifyListeners();
 
     final savedIdList = collectGorSavedIdFromJson();
     setGorSavedIdList(savedIdList);
-    notifyListeners();
 
-    setIsThereGorSaved(savedIdList != []);
-    notifyListeners();
+    setIsThereGorSaved(savedIdList.isNotEmpty);
   }
 
   void setGorIdSelected(id) {
@@ -34,19 +50,30 @@ class GorViewModel extends ChangeNotifier {
 
   List<int> get gorSavedIdList => _gorSavedIdList;
 
-  Gor get gorSelected => _gorList.where((gor) => gor.id == _gorIdSelected).toList()[0];
+  Gor get gorSelected => _gorList.where((gor) => gor.id == _gorIdSelected).toList().first;
 
   void pressedSaveGor(){
     gorSelected.isSave = !gorSelected.isSave!;
     gorSelected.isSave! ? _gorSavedIdList.insert(0, _gorIdSelected) : _gorSavedIdList.remove(_gorIdSelected);
-    _isThereGorSaved = _gorSavedIdList != [];
+    notifyListeners();
+    _isThereGorSaved = _gorSavedIdList.isNotEmpty;
     notifyListeners();
   }
 
-  List<Gor> get gorSavedList => _gorSavedIdList.map((idSaved) => _gorList.where((gor) => gor.id == idSaved).toList()[0]).toList();
+  List<Gor> get gorSavedList => _gorSavedIdList.map((idSaved) => _gorList.where((gor) => gor.id == idSaved).toList().first).toList();
 
-  Gor getGorBookedNewest() => _gorList.where((gor) => gor.id == BookedViewModel().getBookedNewest().gorId).toList()[0];
+  Gor getGorBookedNewest() => _gorList.where((gor) => gor.id == BookedViewModel().getBookedNewest().gorId).toList().first;
 
   List<int> collectGorSavedIdFromJson() => _gorList.where((gor) => gor.isSave!).map((gor) => gor.id!).toList();
-  
+
+  List<Gor> getSearchGor() {
+    final List<Gor> gorSearchedList = [];
+    for (var _gor in _gorList) {
+      if(_gor.name!.toLowerCase().contains(_gorSearched.toLowerCase())) {
+        gorSearchedList.add(_gor);
+      }
+    }
+
+    return gorSearchedList;
+  }
 }

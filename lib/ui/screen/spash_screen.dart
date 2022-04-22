@@ -22,10 +22,10 @@ class _SplashScreenState extends State<SplashScreen> {
   
   @override
   Widget build(BuildContext context) {
-    NewsViewModel newsViewModel = context.watch<NewsViewModel>();
     GorViewModel gorViewModel = context.watch<GorViewModel>();
-    newsViewModel.getNews();
     gorViewModel.getGors();
+    NewsViewModel newsViewModel = context.watch<NewsViewModel>();
+    newsViewModel.getNews();
     return Scaffold(
       body: Center(
         child: Image.asset(

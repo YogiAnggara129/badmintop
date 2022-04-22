@@ -12,13 +12,4 @@ class News {
     date = json['date'];
     url = json['url'];
   }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['title'] = this.title;
-    data['img'] = this.img;
-    data['date'] = this.date;
-    data['url'] = this.url;
-    return data;
-  }
 }

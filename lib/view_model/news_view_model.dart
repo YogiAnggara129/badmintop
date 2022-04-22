@@ -7,7 +7,7 @@ class NewsViewModel with ChangeNotifier {
   setNewsList(List<News> newsList) => _newsList = newsList;
   List<News> get newsList => _newsList;
 
-  void getNews() async {
+  Future<void> getNews() async {
     final data = await NewsRepository().fetchNewsList();
     setNewsList(data);
     notifyListeners();

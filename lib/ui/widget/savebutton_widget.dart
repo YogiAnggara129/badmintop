@@ -1,11 +1,11 @@
 import 'package:badmintop/ui/theme/theme.dart';
 import 'package:badmintop/view_model/gor_view_model.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class SaveButtonWidget extends StatefulWidget {
-  const SaveButtonWidget({ Key? key }) : super(key: key);
+  const SaveButtonWidget({ Key? key, required this.gorViewModel }) : super(key: key);
 
+  final GorViewModel gorViewModel;
 
   @override
   _SaveButtonWidgetState createState() => _SaveButtonWidgetState();
@@ -15,17 +15,16 @@ class _SaveButtonWidgetState extends State<SaveButtonWidget> {
   
   @override
   Widget build(BuildContext context) {
-    GorViewModel gorViewModel = context.watch<GorViewModel>();
     return InkWell(
-      onTap: (() => setState(() => gorViewModel.pressedSaveGor())),
+      onTap: (() => setState(() => widget.gorViewModel.pressedSaveGor())),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 5.0),
         decoration: BoxDecoration(
-          border: gorViewModel.gorSelected.isSave! ? null : Border.all(
+          border: widget.gorViewModel.gorSelected.isSave! ? null : Border.all(
             color: blueColorFirst,
             width: 1.5
           ),
-          color: gorViewModel.gorSelected.isSave! ? blueColorFirst : null,
+          color: widget.gorViewModel.gorSelected.isSave! ? blueColorFirst : null,
           borderRadius: const BorderRadius.all(
             Radius.circular(20)
           ),
@@ -34,11 +33,11 @@ class _SaveButtonWidgetState extends State<SaveButtonWidget> {
           children: [
             Icon(
               Icons.bookmark_add_outlined,
-              color: gorViewModel.gorSelected.isSave! ? Colors.white : blueColorFirst,
+              color: widget.gorViewModel.gorSelected.isSave! ? Colors.white : blueColorFirst,
             ),
             Text(
-              gorViewModel.gorSelected.isSave! ? "Disimpan" : "Simpan",
-              style: gorViewModel.gorSelected.isSave! ? h3HeaderStyle : itemContentStyle,
+              widget.gorViewModel.gorSelected.isSave! ? "Disimpan" : "Simpan",
+              style: widget.gorViewModel.gorSelected.isSave! ? h3HeaderStyle : itemContentStyle,
             )
           ],
         ),
